@@ -79,8 +79,8 @@ revealElements.forEach(el => {
 //  TYPING EFFECT — hero subtitle
 // =============================================
 const titles = [
-  'Front-End Developer',
   'Web Developer',
+  'UI/UX Designer',
 ];
 
 const titleEl = document.querySelector('.hero-title-gradient');
