@@ -364,8 +364,11 @@ section {
 .project-logo {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.project-logo--shoplet {
+  clip-path: inset(2px round 12px);
 }
 
 .project-title {
@@ -378,6 +381,29 @@ section {
   font-size: 0.9rem;
   line-height: 1.7;
   margin-bottom: 1rem;
+}
+
+.project-tech-stack {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.35rem 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-tech-stack dt {
+  font-size: 0.72rem;
+}
+
+.project-tech-stack dd {
+  margin: 0;
+  min-width: 0;
+}
+
+.project-tech-stack .project-tag {
+  padding: 0.15rem 0.4rem;
+  margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .project-tags {
@@ -1053,4 +1079,8 @@ footer {
     margin-left: 0.75rem;
     font-size: 0.8rem;
   }
+}
+
+.project-icon.project-icon--logo {
+  background: transparent;
 }
